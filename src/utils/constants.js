@@ -21,3 +21,5 @@ export const SUPPORTED_LANGUAGES=[
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
 
 export const BG_IMG = "https://assets.nflxext.com/ffe/siteui/vlv3/2f5a878d-bbce-451b-836a-398227a34fbf/web/IN-en-20241230-TRIFECTA-perspective_5ab944a5-1a71-4f6d-b341-8699d0491edd_small.jpg"
+
+export const FIREBASEAPI_KEY= process.env.REACT_APP_FIREBASE_APIKEY;

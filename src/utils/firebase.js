@@ -2,9 +2,10 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth} from "firebase/auth";
+import { FIREBASEAPI_KEY } from "./constants";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBwyAhzJstOoVShwImaaMU6D7UkFz_CbBE",
+  apiKey: FIREBASEAPI_KEY,
   authDomain: "netflixgpt-b04d7.firebaseapp.com",
   projectId: "netflixgpt-b04d7",
   storageBucket: "netflixgpt-b04d7.firebasestorage.app",
