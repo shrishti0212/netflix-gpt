@@ -4,9 +4,9 @@ const MovieList = ({ title, movies }) => {
     // Ensure movies is always treated as an array
     const moviesArray = Array.isArray(movies) ? movies : [movies];
     return (
-        <div className="px-6">
+        <div className="px-6 ">
             <h1 className="text-xl md:text-3xl py-4 text-white font-bold">{title}</h1>
-            <div className="flex overflow-x-scroll">
+            <div className="flex overflow-auto scrollbar-none">
                 <div className="flex">
                     {moviesArray.map((movie) => (
                         <MovieCard 
