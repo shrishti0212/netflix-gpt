@@ -5,7 +5,11 @@ import { createUserWithEmailAndPassword ,signInWithEmailAndPassword,updateProfil
 import { auth } from "../utils/firebase"; 
 import { useDispatch } from "react-redux";
 import {addUser} from "../utils/userSlice";
+<<<<<<< HEAD
 import { USER_AVATAR } from "../utils/constants";
+=======
+import { BG_IMG, USER_AVATAR } from "../utils/constants";
+>>>>>>> 176079fa72d2ec88bd34e187611a471f949b1d41
 
 const Login=() =>{
     const [isSignInForm , setSignInForm]=useState(true);
@@ -91,15 +95,25 @@ const Login=() =>{
     return (
         <div>
             <Header/>
+<<<<<<< HEAD
             <div className="absolute">
                 <img
                 src="https://assets.nflxext.com/ffe/siteui/vlv3/2f5a878d-bbce-451b-836a-398227a34fbf/web/IN-en-20241230-TRIFECTA-perspective_5ab944a5-1a71-4f6d-b341-8699d0491edd_small.jpg"
+=======
+            <div className=" absolute">
+                <img className="w-screen h-screen object-cover"
+                src={BG_IMG}
+>>>>>>> 176079fa72d2ec88bd34e187611a471f949b1d41
                 alt="logo"
                 />
             </div>
             <form 
                 onSubmit={(e)=> e.preventDefault()}
+<<<<<<< HEAD
                 className="w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-90">
+=======
+                className=" w-3/5 md:w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-90">
+>>>>>>> 176079fa72d2ec88bd34e187611a471f949b1d41
 
                 <h1 className="font-bold text-3xl py-4">{
                 isSignInForm ? "Sign In":"Sign Up"}
